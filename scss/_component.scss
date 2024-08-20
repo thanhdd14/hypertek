@@ -1,0 +1,159 @@
+@use "vars" as *;
+
+
+.c-fc{ //font-color
+	&--white{
+		color: white !important;
+	}
+	&--black{
+		color: black !important;
+	}
+}
+
+
+
+.c-ft{//font-family
+	&--en{
+		font-family: $font-en;
+	}
+	&--jp{
+
+	}
+}
+
+
+
+.c-al{
+	&--c{
+		text-align: center !important;
+	}
+	
+	&--r{
+		text-align: right !important
+	}
+	
+	&--l{
+		text-align: left !important;
+	}
+}
+
+
+
+// Image position control
+.c-pull{
+	&--left{
+		margin-left: calc(((100vw - 100%) / 2) * -1)
+	}
+	&--right{
+		margin-right: calc(((100vw - 100%) / 2) * -1)
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* ====================================================
+Component
+==================================================== */
+// Common Text style
+.c-txt{
+	&__basic{
+		@include font-size(16);
+		line-height: 1.5;
+		@include mq(){
+			@include font-size(14);
+			line-height: 1.6;
+			text-align: justify;
+		}
+	}
+}
+
+
+
+
+//ttl
+.c-ttl{
+	&__01{
+		display: block;
+		font-weight: bold;
+		@include font-size(40);
+		color: $blue;
+		line-height: 1.4;
+		margin-bottom: 20px;
+		@include mq(){
+			@include font-size(34);
+			line-height: 1.1;
+		}
+	}
+
+}
+
+//btn
+.c-btn{
+	&__01{
+		@include flex(center,center,wrap);
+		width: 100%;
+		max-width: 215px;
+		height: 64px;
+		background: white;
+		border-radius: 100px;
+		@include font-size(16);
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $blue;
+		@include mq(){
+			@include font-size(14);
+			height: 46px;
+			max-width: 160px;
+		}
+		span{
+			display: block;
+			position: relative;
+			padding: 0 50px 0 0;
+			@include mq(){
+				padding: 0 35px 0 0;
+			}
+			&:after{
+				content: "";
+				width: 32px;
+				height: 32px;
+				background: url("../img/common/arrow-right.png")no-repeat;
+				background-size: 100%;
+				position: absolute;
+				@include v-align;
+				right: 0;
+				@include mq(){
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+}
+
+
+//fade up
+.js-scrollin {
+	opacity: 0;
+	-webkit-transform: translate(0, 70px);
+	-ms-transform: translate(0, 70px);
+	transform: translate(0, 70px);
+	&.active{
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		transform: translate(0, 0);
+		-webkit-transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		-o-transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	}
+}
+
+
+
