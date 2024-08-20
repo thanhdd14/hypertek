@@ -34,6 +34,8 @@
 		@include font-size(18);
 		line-height: 1.6;
 		z-index: 2;
+		opacity: 0;
+		visibility: hidden;
 		@include mq(){
 			@include font-size(16);
 			text-align: center;
@@ -58,6 +60,8 @@
 		margin: 0 auto;
 		z-index: 3;
 		@include flex(between,center,wrap);
+		opacity: 0;
+		visibility: hidden;
 		@include mq(){
 			bottom: 30px;
 			justify-content: center;

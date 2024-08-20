@@ -168,3 +168,19 @@
 	}
 
 }
+
+
+.is-hello{
+	.mv-block{
+		opacity: 1;
+		visibility: visible;
+		transition: all .7s ease;
+		transition-delay: 0.7s;
+	}
+	.mv-links{
+		opacity: 1;
+		visibility: visible;
+		transition: all .7s ease;
+		transition-delay: 1s;
+	}
+}

@@ -78,7 +78,7 @@ setTimeout(function () {
             setTimeout(function () {
                 $(".working-show .working-show__item").removeClass("active");
                 $(".working-show").removeClass("line");
-            },1000);
+            },2000);
         }
         else {
             jQuery('.working-show .working-show__item:first-child').addClass('active');
@@ -86,3 +86,8 @@ setTimeout(function () {
         }},
         1000)});
 },3000);
+
+function load() {
+    document.body.classList.add('is-hello');
+}
+window.onload = load;
