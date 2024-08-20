@@ -40,9 +40,7 @@
 		</header>
 		<main class="page-index">
 			<section class="sec-mv">
-				<div class="mv-img">
-					<img src="./img/index/mv.jpg" alt="HYPERTEK">
-				</div>
+				<canvas id="cvs"></canvas>
 				<div class="mv-block">
 					<h1 class="mv-block__ttl"> Create with the heart<br> Build with the mind </h1>
 					<p> “We are enthusiastic about the opportunity to cooperate<br class="pc-sm">with you on numerous projects” </p>
@@ -63,10 +61,10 @@
 			<section class="sec-about" id="about">
 				<div class="inner">
 					<div class="about-block">
-						<div class="about-block__img">
+						<div class="about-block__img js-scrollin">
 							<img src="./img/index/about-img.png" alt="About us">
 						</div>
-						<div class="about-block__ct c-txt__basic">
+						<div class="about-block__ct c-txt__basic js-scrollin">
 							<h2 class="c-ttl__01">About us</h2>
 							<p>
 								<strong>HYPERTEK</strong>&nbsp;is a technology-driven company founded by a group of experienced professionals with a successful background in information technology and outsourcing. Our main target markets are Japan, Hong Kong, and the United States, where we have developed a distinctive approach to project completion. </p>
@@ -79,16 +77,16 @@
 			<section class="sec-services" id="services">
 				<div class="inner">
 					<div class="services-note c-txt__basic">
-						<h2 class="c-ttl__01">Services</h2>
-						<p> In pursuit of becoming a knowledge-driven organization, Hypertek employees are committed to lifelong learning, regularly updating their professional skills to ensure top-notch performance. </p>
+						<h2 class="c-ttl__01 js-scrollin">Services</h2>
+						<p class="js-scrollin"> In pursuit of becoming a knowledge-driven organization, Hypertek employees are committed to lifelong learning, regularly updating their professional skills to ensure top-notch performance. </p>
 					</div>
 					<div class="services-block">
 						<div class="services-block__ct c-txt__basic">
-							<h3 class="services-block__ct-ttl">ONE-STOP SERVICE</h3>
-							<span class="services-block__ct-ttl-small">Advanced Creative Engineer</span>
-							<p> In pursuit of becoming a knowledge-driven organization, Hypertek employees are committed to lifelong learning, regularly updating their professional skills to ensure top-notch performance. </p>
+							<h3 class="services-block__ct-ttl js-scrollin">ONE-STOP SERVICE</h3>
+							<span class="services-block__ct-ttl-small js-scrollin">Advanced Creative Engineer</span>
+							<p class="js-scrollin"> In pursuit of becoming a knowledge-driven organization, Hypertek employees are committed to lifelong learning, regularly updating their professional skills to ensure top-notch performance. </p>
 						</div>
-						<div class="services-block__img">
+						<div class="services-block__img js-scrollin">
 							<img src="./img/index/services-img.png" alt="Services">
 							<div class="services-block__img-box services-block__img-box--blue services-block__img-box-01"> Web service development </div>
 							<div class="services-block__img-box services-block__img-box--white services-block__img-box-02"> Smartphone application development </div>
@@ -103,9 +101,9 @@
 			</section>
 			<section class="sec-working" id="working">
 				<div class="inner">
-					<h2 class="c-ttl__01 c-fc--white c-al--c mbpc-80">Working Process</h2>
-					<ul class="working-show">
-						<li class="working-show__item working-show__item--01">
+					<h2 class="c-ttl__01 c-fc--white c-al--c mbpc-80 mbsp-40 js-scrollin">Working Process</h2>
+					<ul class="working-show line js-scrollin">
+						<li class="working-show__item working-show__item--01 active">
 							<div class="working-show__dots"></div>
 							<div class="working-show__box">
 								<span class="working-show__steps">STEP 1</span>
@@ -166,9 +164,9 @@
 			</section>
 			<section class="sec-emerging">
 				<div class="inner">
-					<h2 class="c-ttl__01 c-al--c mbpc-80">Emerging Technology</h2>
+					<h2 class="c-ttl__01 c-al--c mbpc-80 js-scrollin">Emerging Technology</h2>
 					<ul class="emerging-list">
-						<li class="emerging-list__item">
+						<li class="emerging-list__item js-scrollin">
 							<div class="emerging-list__box c-txt__basic">
 								<div class="emerging-list__heading">
 									<span class="emerging-list__heading-number">01.</span>
@@ -189,7 +187,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="emerging-list__item">
+						<li class="emerging-list__item js-scrollin">
 							<div class="emerging-list__box c-txt__basic">
 								<div class="emerging-list__heading">
 									<span class="emerging-list__heading-number">02.</span>
@@ -208,7 +206,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="emerging-list__item">
+						<li class="emerging-list__item js-scrollin">
 							<div class="emerging-list__box c-txt__basic">
 								<div class="emerging-list__heading">
 									<span class="emerging-list__heading-number">03.</span>
@@ -234,12 +232,12 @@
 			</section>
 			<section class="sec-technology" id="technology">
 				<div class="inner">
-					<h2 class="c-ttl__01 c-al--c">Technology</h2>
-					<div class="technology-note c-txt__basic c-al--c">
+					<h2 class="c-ttl__01 c-al--c js-scrollin">Technology</h2>
+					<div class="technology-note c-txt__basic c-al--c js-scrollin">
 						<p> Hypertek’s curent capacity can confidently meet most new technologies on the market </p>
 					</div>
 					<div class="technology-list">
-						<div class="technology-list__item">
+						<div class="technology-list__item js-scrollin">
 							<div class="technology-list__box">
 								<h3 class="technology-list__ttl">Front-End</h3>
 								<ul class="technology-list__icon">
@@ -252,7 +250,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="technology-list__item">
+						<div class="technology-list__item js-scrollin">
 							<div class="technology-list__box">
 								<h3 class="technology-list__ttl">Back-End</h3>
 								<ul class="technology-list__icon">
@@ -265,7 +263,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="technology-list__item">
+						<div class="technology-list__item js-scrollin">
 							<div class="technology-list__box">
 								<h3 class="technology-list__ttl">Database</h3>
 								<ul class="technology-list__icon">
@@ -277,7 +275,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="technology-list__item">
+						<div class="technology-list__item js-scrollin">
 							<div class="technology-list__box">
 								<h3 class="technology-list__ttl">Mobile</h3>
 								<ul class="technology-list__icon">
@@ -288,7 +286,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="technology-list__item">
+						<div class="technology-list__item js-scrollin">
 							<div class="technology-list__box">
 								<h3 class="technology-list__ttl">Operating Systems</h3>
 								<ul class="technology-list__icon">
@@ -298,7 +296,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="technology-list__item">
+						<div class="technology-list__item js-scrollin">
 							<div class="technology-list__box">
 								<h3 class="technology-list__ttl">Devops</h3>
 								<ul class="technology-list__icon">
@@ -308,7 +306,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="technology-list__item">
+						<div class="technology-list__item js-scrollin">
 							<div class="technology-list__box">
 								<h3 class="technology-list__ttl">Biz-Tool</h3>
 								<ul class="technology-list__icon">
@@ -318,7 +316,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="technology-list__item">
+						<div class="technology-list__item js-scrollin">
 							<div class="technology-list__box">
 								<h3 class="technology-list__ttl">Cloud</h3>
 								<ul class="technology-list__icon">
@@ -332,8 +330,8 @@
 			</section>
 			<section class="sec-delivery" id="delivery">
 				<div class="inner">
-					<h2 class="c-ttl__01 c-al--c mbpc-40">Delivery Models</h2>
-					<div class="delivery-block">
+					<h2 class="c-ttl__01 c-al--c mbpc-40 js-scrollin">Delivery Models</h2>
+					<div class="delivery-block js-scrollin">
 						<div class="delivery-block__ct c-txt__basic">
 							<h3 class="delivery-block__ct-ttl">Fixed Price</h3>
 							<p>Cost estimation based on the reciprocal scope and project requirement</p>
@@ -342,7 +340,7 @@
 							<img src="./img/index/delivery-img.svg" alt="Fixed Price">
 						</div>
 					</div>
-					<div class="delivery-block">
+					<div class="delivery-block js-scrollin">
 						<div class="delivery-block__ct c-txt__basic">
 							<h3 class="delivery-block__ct-ttl">Labo Contact</h3>
 							<p>Hire a project team and pay monthly. Monthly cost = number of people x unit price</p>
@@ -351,7 +349,7 @@
 							<img src="./img/index/delivery-img.svg" alt="Labo Contact">
 						</div>
 					</div>
-					<div class="delivery-note c-txt__basic">
+					<div class="delivery-note c-txt__basic js-scrollin">
 						<table>
 							<tr>
 								<th></th>
@@ -401,7 +399,7 @@
 								<td> Significant </td>
 							</tr>
 						</table>
-						<div class="delivery-note--sm sp-sm">
+						<div class="delivery-note--sm sp-sm js-scrollin">
 							<table>
 								<tr>
 									<th></th>
@@ -442,8 +440,8 @@
 			</section>
 			<section class="sec-partners">
 				<div class="inner">
-					<h2 class="c-ttl__01 c-al--c mbpc-40">Our partners</h2>
-					<div class="partners-block">
+					<h2 class="c-ttl__01 c-al--c mbpc-40 js-scrollin">Our partners</h2>
+					<div class="partners-block js-scrollin">
 						<ul class="partners-logo">
 							<li class="partners-logo__item">
 								<img src="./img/common/logo-item-01.png" alt="VIETIS">
@@ -506,6 +504,7 @@
 			</div>
 		</footer>
 		<script src="./js/jquery-3.6.0.min.js"></script>
+		<script src="./js/particles.js"></script>
 		<script src="./js/setting.js"></script>
 	</body>
 </html>

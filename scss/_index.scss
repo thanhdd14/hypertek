@@ -16,6 +16,9 @@
 		@include v-align;
 		right: 0;
 		z-index: 1;
+		@include mq(){
+			width: 100%;
+		}
 		img{
 			width: 100%;
 		}
@@ -181,7 +184,7 @@
 				position: static;
 				width: 100%;
 				padding: 0 0 0 15px;
-				margin-bottom: 50px;
+				margin-bottom: 16vw;
 			}
 			&-ttl{
 				display: block;
@@ -227,6 +230,11 @@
 				width: auto;
 				margin: 0 -8vw;
 			}
+			.running{
+
+				animation: running 3s infinite;
+
+			}
 			&-box{
 				border-radius: 50%;
 				@include font-size(16);
@@ -237,8 +245,11 @@
 				right: 0;
 				z-index: 1;
 				padding: 15px;
+				@include mq(xl){
+					font-size: vw(16);
+				}
 				@include mq(){
-					display: none;
+					font-size: vwsp(12);
 				}
 				&--white{
 					background: white;
@@ -248,47 +259,137 @@
 					background: #135DC1;
 					color: white;
 				}
+
 				&-01{
 					width: 150px;
 					height: 150px;
 					top: -5px;
 					right: 160px;
+					animation: run01 3s infinite;
+					@include mq(xl){
+						width: vw(150);
+						height: vw(150);
+						top: vw(-5);
+						right: vw(160);
+					}
+					@include mq(){
+						width: vwsp(100);
+						height: vwsp(100);
+						top: vwsp(-21);
+						right: vwsp(75);
+					}
 				}
 				&-02{
 					width: 150px;
 					height: 150px;
-					top: 275px;
+					top: 231px;
 					right: 80px;
+					animation: run02 3s infinite;
+					@include mq(xl){
+						width: vw(150);
+						height: vw(150);
+						top: vw(275);
+						right: vw(80);
+					}
+					@include mq(){
+						width: vwsp(100);
+						height: vwsp(100);
+						top: vwsp(97);
+						right: vwsp(23);
+					}
 				}
 				&-03{
 					width: 118px;
 					height: 118px;
 					top: 495px;
 					right: 235px;
+					animation: run03 3s infinite;
+					@include mq(xl){
+						width: vw(118);
+						height: vw(118);
+						top: vw(495);
+						right: vw(235);
+					}
+					@include mq(){
+						width: vwsp(80);
+						height: vwsp(80);
+						top: vwsp(225);
+						right: vwsp(120);
+					}
 				}
 				&-04{
 					width: 154px;
 					height: 154px;
 					top: 455px;
 					left: 195px;
+					animation: run04 3s infinite;
+					@include mq(xl){
+						width: vw(154);
+						height: vw(154);
+						top: vw(455);
+						left: vw(195);
+					}
+					@include mq(){
+						width: vwsp(105);
+						height: vwsp(105);
+						top: vwsp(200);
+						left: vwsp(60);
+					}
 				}
 				&-05{
 					width: 186px;
 					height: 186px;
 					top: 0;
 					left: 125px;
+					animation: run05 3.5s infinite;
+					@include mq(xl){
+						width: vw(186);
+						height: vw(186);
+						left: vw(125);
+					}
+					@include mq(){
+						width: vwsp(120);
+						height: vwsp(120);
+						left: vwsp(37);
+					}
 				}
 				&-06{
 					width: 52px;
 					height: 52px;
 					top: 180px;
 					left: 395px;
+					animation: run06 3s infinite;
+					@include mq(xl){
+						width: vw(52);
+						height: vw(52);
+						top: vw(180);
+						left: vw(395);
+					}
+					@include mq(){
+						width: vwsp(44);
+						height: vwsp(44);
+						top: vwsp(74);
+						left: vwsp(169);
+					}
 				}
 				&-07{
 					width: 106px;
 					height: 106px;
 					top: 355px;
 					left: 400px;
+					animation: run07 3s infinite;
+					@include mq(xl){
+						width: vw(106);
+						height: vw(106);
+						top: vw(355);
+						left: vw(400);
+					}
+					@include mq(){
+						width: vwsp(65);
+						height: vwsp(65);
+						top: vwsp(158);
+						left: vwsp(176);
+					}
 				}
 			}
 
@@ -300,14 +401,38 @@
 	&-show{
 		height: 360px;
 		position: relative;
+		@include mq(){
+			height: auto;
+			margin: 0 0 0 30px;
+		}
 		&:after{
 			content: "";
 			position: absolute;
 			@include v-align;
 			left: 0;
-			right: 0;
+			width: 0;
 			height: 1px ;
 			background: white;
+
+			@include mq(){
+				width: 1px;
+				left: 6px;
+				right: auto;
+				height: 0;
+				top: 12px;
+				transform: translateY(0);
+			}
+		}
+		&.line{
+			&:after{
+				transition: all .7s ease;
+				@include mq(md-min){
+					width: 100%;
+				}
+				@include mq(){
+					height: calc(100% - 45px);
+				}
+			}
 		}
 		&__item{
 			height: 50%;
@@ -315,41 +440,54 @@
 			position: absolute;
 			@include flex(0,0,wrap);
 			align-content: center;
+			@media screen and (max-width: 1200px) {
+				@include font-size(14);
+			}
+			@include mq(){
+				height: auto;
+				position: static;
+				margin-bottom: 30px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
 			>*{
 				width: 100%;
 			}
-			&:nth-child(odd){
-				top: 0;
-				align-items: flex-start;
-				.working-show__dots{
-					bottom: -16px;
-				}
-				.working-show__box{
-					&:before{
-						bottom: 40px;
-						background: url("../img/index/working-item.png") no-repeat;
-						background-position: bottom left;
+			@include mq(md-min){
+				&:nth-child(odd){
+					top: 0;
+					align-items: flex-start;
+					.working-show__dots{
+						bottom: -16px;
+					}
+					.working-show__box{
+						&:before{
+							bottom: 40px;
+							background: url("../img/index/working-item.png") no-repeat;
+							background-position: bottom left;
+						}
 					}
 				}
-			}
-			&:nth-child(even){
-				bottom: 0;
-				align-items: flex-end;
-				.working-show__dots{
-					top: -16px;
-				}
-				.working-show__box{
-					@include flex(0,0,wrap);
-					align-content: flex-end;
-					>*{
-						width: 100%;
+				&:nth-child(even){
+					bottom: 0;
+					align-items: flex-end;
+					.working-show__dots{
+						top: -16px;
 					}
-					&:before{
-						top: 40px;
-						background: url("../img/index/working-item-02.png") no-repeat;
-						background-position: top left;
-					}
+					.working-show__box{
+						@include flex(0,0,wrap);
+						align-content: flex-end;
+						>*{
+							width: 100%;
+						}
+						&:before{
+							top: 40px;
+							background: url("../img/index/working-item-02.png") no-repeat;
+							background-position: top left;
+						}
 
+					}
 				}
 			}
 			&--01{
@@ -377,17 +515,62 @@
 			&--08{
 				left: 87.5%;
 			}
+			&.active{
+				.working-show__dots{
+					transform: scale(1);
+				}
+				.working-show__box{
+					@include mq(md-min){
+						opacity: 1;
+						visibility: visible;
+						transform: translate(0,0);
+					}
+					@include mq(){
+						&:before{
+							width: 75px;
+						}
+						span,p{
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+			}
 		}
 		&__box{
 			height: 100%;
 			position: relative;
 			padding: 0 0 0 55px;
+			@include mq(md-min){
+				transform: translate(50px, 0);
+				opacity: 0;
+				visibility: hidden;
+				transition: all .7s ease;
+			}
+			@include mq(){
+				padding: 5px 0 0 90px;
+				p,span{
+					display: block;
+					opacity: 0;
+					visibility: visible;
+					transition: all .7s ease;
+				}
+			}
 			&:before{
 				content: "";
 				position: absolute;
 				left: 10px;
 				right: 0;
 				height: 105px;
+				@include mq(){
+					top: 15px;
+					left: 6px;
+					right: auto;
+					height: 1px;
+					background: white;
+					width: 0;
+					transition: all .7s ease;
+				}
 			}
 		}
 		&__dots{
@@ -397,6 +580,8 @@
 			border: 1px solid white;
 			position: absolute;
 			left: -10px;
+			transition: all .7s ease;
+			transform: scale(0);
 			&:before{
 				content: "";
 				width: 13px;
@@ -415,6 +600,12 @@
 			@include font-size(20);
 			font-weight: bold;
 			margin-bottom: 23px;
+			@media screen and (max-width: 1200px) {
+				@include font-size(16);
+			}
+			@include mq(){
+				margin-bottom: 5px;
+			}
 		}
 	}
 }
@@ -736,9 +927,6 @@
 		&__icon{
 			@include flex(0,0,wrap);
 			margin: 0 -10px;
-			@include mq(){
-				justify-content: center;
-			}
 			li{
 				width: 33.333%;
 				padding: 0 10px;
@@ -934,6 +1122,26 @@
 
 
 .sec{
+	&-mv{
+		height: 100vh;
+		overflow: hidden;
+		#cvs{
+			background-color: #000;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(black,0.3);
+			z-index: 1;
+		}
+	}
 	&-about{
 		padding: 50px 0;
 	}
@@ -958,6 +1166,11 @@
 	}
 	&-emerging{
 		padding: 100px 0;
+		@include mq(){
+			.c-ttl__01{
+				@include font-size(28);
+			}
+		}
 		.inner{
 			position: relative;
 			z-index: 2;

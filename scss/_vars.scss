@@ -22,6 +22,11 @@ $blue : #07397D;
 	@return #{$vwSize}vw;
 }
 
+@function vwsp($element-size) {
+	$vwSize: ($element-size / 375) * 100;
+	@return #{$vwSize}vw;
+}
+
 
 @mixin ob {
 	object-fit: cover;

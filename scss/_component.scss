@@ -87,7 +87,7 @@ Component
 		line-height: 1.4;
 		margin-bottom: 20px;
 		@include mq(){
-			@include font-size(34);
+			@include font-size(32);
 			line-height: 1.1;
 		}
 	}
@@ -141,9 +141,9 @@ Component
 //fade up
 .js-scrollin {
 	opacity: 0;
-	-webkit-transform: translate(0, 70px);
-	-ms-transform: translate(0, 70px);
-	transform: translate(0, 70px);
+	-webkit-transform: translate(0, 50px);
+	-ms-transform: translate(0, 50px);
+	transform: translate(0, 50px);
 	&.active{
 		opacity: 1;
 		-webkit-transform: translate(0, 0);
