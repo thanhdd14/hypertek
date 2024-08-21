@@ -71,21 +71,21 @@ jQuery(document).ready(function ($) {
     });
 });
 
-setTimeout(function () {
-    jQuery(document).ready(function(){setInterval(function(){
-        if (jQuery('.working-show .working-show__item.active').next().length)jQuery('.working-show .working-show__item.active').addClass('active').next().addClass('active');
-        if($('.working-show .working-show__item.active').length === 8){
-            setTimeout(function () {
-                $(".working-show .working-show__item").removeClass("active");
-                $(".working-show").removeClass("line");
-            },2000);
-        }
-        else {
-            jQuery('.working-show .working-show__item:first-child').addClass('active');
-            $(".working-show").addClass("line");
-        }},
-        1000)});
-},3000);
+// setTimeout(function () {
+//     jQuery(document).ready(function(){setInterval(function(){
+//         if (jQuery('.working-show .working-show__item.active').next().length)jQuery('.working-show .working-show__item.active').addClass('active').next().addClass('active');
+//         if($('.working-show .working-show__item.active').length === 8){
+//             setTimeout(function () {
+//                 $(".working-show .working-show__item").removeClass("active");
+//                 $(".working-show").removeClass("line");
+//             },2000);
+//         }
+//         else {
+//             jQuery('.working-show .working-show__item:first-child').addClass('active');
+//             $(".working-show").addClass("line");
+//         }},
+//         1000)});
+// },3000);
 
 function load() {
     document.body.classList.add('is-hello');

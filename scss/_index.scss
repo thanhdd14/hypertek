@@ -11,7 +11,7 @@
 		video{
 			position: absolute;
 			@include v-h-align;
-			height: 100%;
+			height: 130%;
 		}
 	}
 	&-img{
@@ -1437,6 +1437,10 @@
 	&-mv{
 		height: 100vh;
 		overflow: hidden;
+		min-height: 700px;
+		@include mq(){
+			min-height: 100px;
+		}
 		#cvs{
 			background: black;
 			position: absolute;
