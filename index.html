@@ -21,16 +21,19 @@
 						<a href="#about" class="js-header-anchor">About Us</a>
 					</li>
 					<li class="header-nav__menu-item">
-						<a href="#technology" class="js-header-anchor">Technology</a>
+						<a href="#services" class="js-header-anchor">Services</a>
 					</li>
 					<li class="header-nav__menu-item">
 						<a href="#working" class="js-header-anchor">Working Process</a>
 					</li>
 					<li class="header-nav__menu-item">
-						<a href="#services" class="js-header-anchor">Services</a>
+						<a href="#technology" class="js-header-anchor">Technology</a>
 					</li>
 					<li class="header-nav__menu-item">
 						<a href="#delivery" class="js-header-anchor">Delivery Models</a>
+					</li>
+					<li class="header-nav__menu-item">
+						<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hypertek-sales/30min?primary_color=07397d'});return false;" class="header-btn">Contact us!</a>
 					</li>
 				</ul>
 			</nav>
@@ -53,7 +56,7 @@
 						<li><a href="#about" class="js-anchor"><span>About</span></a></li>
 						<li><a href="#services" class="js-anchor"><span>Services</span></a></li>
 					</ul>
-					<a href="" class="c-btn__01">
+					<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hypertek-sales/30min?primary_color=07397d'});return false;" class="c-btn__01">
 						<span>CONTACT US</span>
 					</a>
 				</div>
@@ -102,8 +105,8 @@
 			<section class="sec-working" id="working">
 				<div class="inner">
 					<h2 class="c-ttl__01 c-fc--white c-al--c mbpc-80 mbsp-40 js-scrollin">Working Process</h2>
-					<ul class="working-show line js-scrollin">
-						<li class="working-show__item working-show__item--01 active">
+					<ul class="working-show js-scrollin">
+						<li class="working-show__item working-show__item--01">
 							<div class="working-show__dots"></div>
 							<div class="working-show__box">
 								<span class="working-show__steps">STEP 1</span>
@@ -500,11 +503,13 @@
 				<a href="" id="backtop">
 					<img src="./img/common/backtop.svg" alt="backtop">
 				</a>
-				<div class="copyright c-al--c"> @copyright by Hypertek </div>
+				<div class="copyright c-al--c"> ⓒcopyright by Hypertek </div>
 			</div>
 		</footer>
 		<script src="./js/jquery-3.6.0.min.js"></script>
 		<script src="./js/particles.js"></script>
 		<script src="./js/setting.js"></script>
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 	</body>
 </html>

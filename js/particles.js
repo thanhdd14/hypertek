@@ -57,7 +57,7 @@
         this.numberOfParticles = 40;
       }
       else{
-        this.numberOfParticles = 10;
+        this.numberOfParticles = 18;
       }
       this.createParticles();
     }
