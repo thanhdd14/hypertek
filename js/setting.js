@@ -100,3 +100,14 @@ jQuery(function ($) {
     $('.delivery-list .delivery-list__item ').matchHeight();
     $('.delivery-list .delivery-list__item .delivery-list__box .delivery-list__ct ul').matchHeight();
 });
+
+$(function(){
+    $.oPageLoader({
+        
+        fadeLevel: 1,
+        percentageFontSize: '20px',
+        progressBarColor: 'blue',
+        progressBarHeight: 10,
+        progressBarFadeLevel: 1
+    });
+});
