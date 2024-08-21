@@ -1335,6 +1335,20 @@
 			.c-btn__01{
 				margin: 0 auto;
 				border: 1px solid $blue;
+				background: $blue;
+				@include font-size(14);
+				color: white;
+				max-width: 240px;
+				height: 55px;
+				span{
+					padding: 0 40px 0 0;
+					&:after{
+						background: url(../img/common/arrow-right-03.png) no-repeat;
+						background-size: 100%;
+						width: 27px;
+						height: 27px;
+					}
+				}
 			}
 			ul{
 				display: block;
