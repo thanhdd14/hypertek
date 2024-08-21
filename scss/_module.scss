@@ -169,11 +169,14 @@
 
 }
 
-#oloader_loader_0_1{
-	background: white !important;
+#oloader_loader_0_1,#oloader_canvas_0_1{
+	background: transparent !important;
 	z-index: 9999 !important;
 	background: none !important;
 
+}
+#oloader_overlay_0_1{
+	background: transparent !important;
 }
 #ownage_page_loader_text{
 	color: $blue !important;
