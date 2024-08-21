@@ -169,6 +169,15 @@
 
 }
 
+#oloader_loader_0_1{
+	background: white !important;
+	z-index: 9999 !important;
+	background: none !important;
+
+}
+#ownage_page_loader_text{
+	color: $blue !important;
+}
 
 .loading{
 	position: fixed;
@@ -176,7 +185,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 9;
+	z-index: 99;
 	background: white;
 	@include flex(center,center,wrap);
 	transition: all .7s ease;
