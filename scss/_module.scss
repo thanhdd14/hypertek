@@ -180,6 +180,7 @@
 }
 #ownage_page_loader_text{
 	color: $blue !important;
+	font-family: $font-en;
 }
 
 .loading{
@@ -192,7 +193,7 @@
 	background: white;
 	@include flex(center,center,wrap);
 	transition: all .7s ease;
-	padding-bottom: 200px;
+	padding-bottom: 250px;
 	&-img{
 		display: block;
 		width: 150px;
