@@ -1311,6 +1311,11 @@
 		}
 		&__img{
 			margin: -60px 0 20px;
+			border-radius: 25px;
+			overflow: hidden;
+			@include mq(){
+				border-radius: 10px;
+			}
 			img{
 				width: 100%;
 			}
