@@ -176,19 +176,11 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 99999;
+	z-index: 9;
 	background: white;
 	@include flex(center,center,wrap);
 	transition: all .7s ease;
-	.bar{
-		position: absolute;
-		top: calc(50% + 100px);
-		left: 0;
-		width: 0;
-		height: 5px;
-		background: $blue;
-		@include smooth-transition;
-	}
+	padding-bottom: 200px;
 	&-img{
 		display: block;
 		width: 150px;

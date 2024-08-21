@@ -106,8 +106,8 @@ $(function(){
         
         fadeLevel: 1,
         percentageFontSize: '20px',
-        progressBarColor: 'blue',
+        progressBarColor: '#07397d',
         progressBarHeight: 10,
-        progressBarFadeLevel: 1
+        progressBarFadeLevel: 1,
     });
 });
