@@ -43,7 +43,9 @@
 		</header>
 		<main class="page-index">
 			<section class="sec-mv">
-				<canvas id="cvs"></canvas>
+				<div class="mv-video">
+					<video src="./img/index/mv.mp4" autoplay muted webkit-playsinline playsinline controls loop></video>
+				</div>
 				<div class="mv-block">
 					<h1 class="mv-block__ttl"> Create with the heart<br> Build with the mind </h1>
 					<p> “We are enthusiastic about the opportunity to cooperate<br class="pc-sm">with you on numerous projects” </p>
@@ -333,110 +335,39 @@
 			</section>
 			<section class="sec-delivery" id="delivery">
 				<div class="inner">
-					<h2 class="c-ttl__01 c-al--c mbpc-40 js-scrollin">Delivery Models</h2>
-					<div class="delivery-block js-scrollin">
-						<div class="delivery-block__ct c-txt__basic">
-							<h3 class="delivery-block__ct-ttl">Fixed Price</h3>
-							<p>Cost estimation based on the reciprocal scope and project requirement</p>
-						</div>
-						<div class="delivery-block__img">
-							<img src="./img/index/delivery-img.svg" alt="Fixed Price">
-						</div>
-					</div>
-					<div class="delivery-block js-scrollin">
-						<div class="delivery-block__ct c-txt__basic">
-							<h3 class="delivery-block__ct-ttl">Labo Contact</h3>
-							<p>Hire a project team and pay monthly. Monthly cost = number of people x unit price</p>
-						</div>
-						<div class="delivery-block__img">
-							<img src="./img/index/delivery-img.svg" alt="Labo Contact">
-						</div>
-					</div>
-					<div class="delivery-note c-txt__basic js-scrollin">
-						<table>
-							<tr>
-								<th></th>
-								<td>
-									<h3 class="delivery-note__ttl">
-										<img src="./img/index/delivery-icon-01.svg" alt="Fixed-price"> Fixed-price </h3>
-								</td>
-								<td>
-									<h3 class="delivery-note__ttl">
-										<img src="./img/index/delivery-icon-02.svg" alt="Labo contract"> Labo contract </h3>
-								</td>
-							</tr>
-							<tr>
-								<th></th>
-								<td>
+					<h2 class="c-ttl__01 c-al--c mbpc-80 mbsp-60 js-scrollin">Delivery Models</h2>
+					<div class="delivery-list">
+						<div class="delivery-list__item js-scrollin">
+							<div class="delivery-list__box">
+								<div class="delivery-list__img">
+									<img src="./img/index/delivery-img-01.jpg" alt="Dedicated Team">
+								</div>
+								<div class="delivery-list__ct c-txt__basic">
+									<h3 class="delivery-list__ct-ttl">Dedicated Team</h3>
+									<p>Our team, dedicated for you!</p>
 									<ul>
-										<li>Completed solution under a fixed budget</li>
-										<li>Well-defined goals, vision, workflows, and results</li>
-										<li>Unlikely to change for the course of development.</li>
+										<li>You want to directly manage what & when we do, how we work</li>
+										<li>Your product/project are continuously updating</li>
+										<li>You need a team to carry out the hard work for you</li>
 									</ul>
-								</td>
-								<td>
+								</div>
+							</div>
+						</div>
+						<div class="delivery-list__item js-scrollin">
+							<div class="delivery-list__box">
+								<div class="delivery-list__img">
+									<img src="./img/index/delivery-img-02.jpg" alt="Project-based">
+								</div>
+								<div class="delivery-list__ct c-txt__basic">
+									<h3 class="delivery-list__ct-ttl">Project-based</h3>
+									<p>Bring your ideas into the real world!</p>
 									<ul>
-										<li>The price will depend on the time and effort spent on the project</li>
-										<li>You can flexibility to modify your requirements and to vary workload.</li>
+										<li>You have a scope, or just a concept idea</li>
+										<li>You want to partially, or fully outsource the development work</li>
+										<li>You need someone to do all the work, so you can just sit back to see the final product</li>
 									</ul>
-								</td>
-							</tr>
-							<tr>
-								<th>Scope</th>
-								<td> Small </td>
-								<td> Medium & Large </td>
-							</tr>
-							<tr>
-								<th>Requirement</th>
-								<td> Defined </td>
-								<td> Evolving </td>
-							</tr>
-							<tr>
-								<th>Budget and time frame</th>
-								<td> Fixed </td>
-								<td> Flexible </td>
-							</tr>
-							<tr>
-								<th>Client's control</th>
-								<td> Little </td>
-								<td> Significant </td>
-							</tr>
-						</table>
-						<div class="delivery-note--sm sp-sm js-scrollin">
-							<table>
-								<tr>
-									<th></th>
-									<td>
-										<h3 class="delivery-note__ttl">
-											<img src="./img/index/delivery-icon-02.svg" alt="Labo contract"> Labo contract </h3>
-									</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td>
-										<ul>
-											<li>The price will depend on the time and effort spent on the project</li>
-											<li>You can flexibility to modify your requirements and to vary workload.</li>
-										</ul>
-									</td>
-								</tr>
-								<tr>
-									<th>Scope</th>
-									<td> Medium & Large </td>
-								</tr>
-								<tr>
-									<th>Requirement</th>
-									<td> Evolving </td>
-								</tr>
-								<tr>
-									<th>Budget and time frame</th>
-									<td> Flexible </td>
-								</tr>
-								<tr>
-									<th>Client's control</th>
-									<td> Significant </td>
-								</tr>
-							</table>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -507,7 +438,6 @@
 			</div>
 		</footer>
 		<script src="./js/jquery-3.6.0.min.js"></script>
-		<script src="./js/particles.js"></script>
 		<script src="./js/setting.js"></script>
 		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
