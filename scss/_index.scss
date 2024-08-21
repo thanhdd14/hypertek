@@ -29,6 +29,8 @@
 		z-index: 1;
 		@include mq(){
 			width: 100%;
+			top: 90px;
+			transform: translateY(0%);
 		}
 		img{
 			width: 100%;
@@ -50,6 +52,8 @@
 		@include mq(){
 			@include font-size(16);
 			text-align: center;
+			top: 83vw;
+			transform: translateY(0);
 		}
 		&__ttl{
 			display: block;
@@ -1328,10 +1332,14 @@
 					margin-bottom: 10px;
 				}
 			}
+			.c-btn__01{
+				margin: 0 auto;
+				border: 1px solid $blue;
+			}
 			ul{
 				display: block;
 				max-width: 320px;
-				margin: 0 auto;
+				margin: 0 auto 30px;
 				li{
 					position: relative;
 					text-align: left;

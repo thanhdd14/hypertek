@@ -170,17 +170,55 @@
 }
 
 
+.loading{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99999;
+	background: white;
+	@include flex(center,center,wrap);
+	transition: all .7s ease;
+	.bar{
+		position: absolute;
+		top: calc(50% + 100px);
+		left: 0;
+		width: 0;
+		height: 5px;
+		background: $blue;
+		@include smooth-transition;
+	}
+	&-img{
+		display: block;
+		width: 150px;
+
+	}
+}
+
 .is-hello{
+	&.active{
+		.loading{
+			opacity: 0;
+			visibility: hidden;
+			z-index: -1;
+		}
+	}
+	.loading{
+		.bar{
+			width: 100%;
+		}
+	}
 	.mv-block{
 		opacity: 1;
 		visibility: visible;
 		transition: all .7s ease;
-		transition-delay: 0.7s;
+		transition-delay: 1s;
 	}
 	.mv-links{
 		opacity: 1;
 		visibility: visible;
 		transition: all .7s ease;
-		transition-delay: 1s;
+		transition-delay: 1.3s;
 	}
 }

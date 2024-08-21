@@ -89,5 +89,14 @@ setTimeout(function () {
 
 function load() {
     document.body.classList.add('is-hello');
+    setTimeout(function () {
+        $(".is-hello").addClass("active");
+    },300);
 }
 window.onload = load;
+
+
+jQuery(function ($) {
+    $('.delivery-list .delivery-list__item ').matchHeight();
+    $('.delivery-list .delivery-list__item .delivery-list__box .delivery-list__ct ul').matchHeight();
+});
