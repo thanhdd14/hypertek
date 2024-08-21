@@ -1357,6 +1357,7 @@
 	&-emerging{
 		padding: 100px 0;
 		@include mq(){
+			padding-top: 0;
 			.c-ttl__01{
 				@include font-size(28);
 			}
@@ -1381,7 +1382,10 @@
 		}
 	}
 	&-technology{
-		padding: 50px 0;
+		padding: 100px 0 50px;
+		@include mq(){
+			padding: 50px 0;
+		}
 	}
 	&-delivery{
 		padding: 50px 0;
